@@ -1,7 +1,8 @@
 import React from 'react';
 import Cards from '../components/Cards';
 import Header from '../components/Header';
-import HomeIMG from '../assets/IMG.png'
+import HomeIMG from '../assets/IMG.png';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         </div>
       </div>
       <Cards />
+      <Footer />
     </div>
   );
 }
