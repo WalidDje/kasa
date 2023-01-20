@@ -1,21 +1,41 @@
 import Header from "../components/Header";
-import BG_img from "../assets/Background.png"
-import Information from "../components/Information";
-import Description from "../components/Description";
-import Equipement from "../components/Equipement";
+import Footer from "../components/Footer";
+import IMG_Banner from "../assets/Section.png"
 
 function About() {
     return (
         <div>
             <Header />
-            <div className="d-flex">
-                <img src={BG_img} alt="background" className="d-flex mx-auto" />
+            <div className="d-flex rounded">
+                <img className="mx-auto" src={IMG_Banner} alt="Bannière" />
             </div>
-            <Information />
-            <div className="d-flex justify-content-around">
-                <Description />
-                <Equipement />
+            <div>
+                <h3> Fiabilité </h3>
+                <p>
+                    Les annonces postées sur Kasa garantissent une fiabilité totale.
+                    Les photos sont conformes aux logements,
+                    et toutes les informations sont régulièrement vérifiées par nos équipes.
+                </p>
+                <h3> Respect </h3>
+                <p>
+                    Les annonces postées sur Kasa garantissent une fiabilité totale.
+                    Les photos sont conformes aux logements,
+                    et toutes les informations sont régulièrement vérifiées par nos équipes.
+                </p>
+                <h3> Service </h3>
+                <p>
+                    Les annonces postées sur Kasa garantissent une fiabilité totale.
+                    Les photos sont conformes aux logements,
+                    et toutes les informations sont régulièrement vérifiées par nos équipes.
+                </p>
+                <h3> Responsabilité </h3>
+                <p>
+                    Les annonces postées sur Kasa garantissent une fiabilité totale.
+                    Les photos sont conformes aux logements,
+                    et toutes les informations sont régulièrement vérifiées par nos équipes.
+                </p>
             </div>
+            <Footer />
         </div>
     )
 }

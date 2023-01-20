@@ -6,9 +6,9 @@ function Header() {
         <div>
             <nav className="navbar bg-light">
                 <div className="container-fluid d-flex mx-5">
-                    <div className='d-flex justify-content-start'>
+                    <Link to="/" className='d-flex justify-content-start'>
                         <img src={Logo} alt="Logo Kasa" />
-                    </div>
+                    </Link>
                     <div className='d-flex justify-content-end'>
                         <Link to="/" className=' text-danger px-4'> Accueil </Link>
                         <Link to="/About" className=' text-danger px-4'> A propos </Link>
