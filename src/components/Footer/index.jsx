@@ -2,8 +2,8 @@ import IMG_Foot from '../../assets/D_Footer.png';
 
 function Footer() {
     return (
-        <div>
-            <img src={IMG_Foot} alt="Footer" />
+        <div className='container-fluid nav fixed-bottom'>
+            <img className='img-fluid w-100' src={IMG_Foot} alt="Footer" />
         </div>
     )
 }
