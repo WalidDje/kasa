@@ -10,8 +10,8 @@ function Header() {
                         <img src={Logo} alt="Logo Kasa" />
                     </Link>
                     <div className='d-flex justify-content-end'>
-                        <Link to="/" className=' text-danger px-4'> Accueil </Link>
-                        <Link to="/About" className=' text-danger px-4'> A propos </Link>
+                        <Link to="/" className=' text-danger px-4 text-decoration-none h4'> Accueil </Link>
+                        <Link to="/About" className=' text-danger px-4 text-decoration-none h4'> A propos </Link>
                     </div>
                 </div>
             </nav>
