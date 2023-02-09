@@ -2,7 +2,7 @@ import { Collapse } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import { useState } from "react";
 
-function Equipement() {
+function Fiabilite() {
 
     const [open, setOpen] = useState(false);
 
@@ -10,13 +10,16 @@ function Equipement() {
         <div>
             <Button
                 onClick={() => setOpen(!open)}
-                aria-controls="example-collapse-text"
+                aria-controls="fiabilité-collapse-text"
                 aria-expanded={open}
+                className="w-100 d-grid gap-2"
+                variant="danger"
+                size="lg"
                 >
-                Block Equipement
+                Fiabilité
             </Button>
             <Collapse in={open}>
-                <div id="example-collapse-text">
+                <div id="fiabilité-collapse-text" className="text-danger bg-light pt-2">
                     Les annonces postées sur Kasa garantissent une fiabilité totale.
                     Les photos sont conformes aux logements,
                     et toutes les informations sont régulièrement vérifiées par nos équipes.
@@ -26,4 +29,4 @@ function Equipement() {
     )
 }
 
-export default Equipement;
+export default Fiabilite;
