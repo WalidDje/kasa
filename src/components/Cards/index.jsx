@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
-import { Card } from "react-bootstrap";
+import './style.css'
 
 function Cards({ cover, title }) {
 
     return (
-        <Card>
-            <Card.Img variant="top" src= {cover} />
-            <Link to="/product" class="card-body">
-                <h5 class="card-title"> {title} </h5>
+        <div className="card-form">
+            <img variant="top" src= {cover} alt="couverture" />
+            <Link to="/product" className="card-body">
+                <h5 className="card-title"> {title} </h5>
             </Link>
-        </Card>
+        </div>
     )
 }
 

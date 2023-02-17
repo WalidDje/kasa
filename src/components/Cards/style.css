@@ -1,0 +1,19 @@
+.card-form {
+    height: 32rem;
+    width: 28rem;
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 233, 233);
+    border-radius: 20px;
+}
+.card-body {
+    border-radius: 150%;
+    text-decoration: none;
+    display: flex;
+}
+.card-title {
+    font-size: 1.5rem;
+    align-self: flex-end;
+}
