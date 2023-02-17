@@ -1,9 +1,11 @@
 import { Collapse } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import { useState } from "react";
+import textData from "../../mocks/textData";
 
 function Respect() {
-
+    
+    const respect = textData.respect;
     const [open, setOpen] = useState(false);
 
     return (
@@ -20,9 +22,7 @@ function Respect() {
             </Button>
             <Collapse in={open}>
                 <div id="Respect-collapse-text" className="text-danger bg-light pt-2">
-                    La bienveillance fait partie des valeurs fondatrices de Kasa.
-                    Tout comportement discriminatoire ou de perturbation de voisinage
-                    entraînera une exclusion de notre plateforme.
+                    {respect}
                 </div>
             </Collapse>
         </div>

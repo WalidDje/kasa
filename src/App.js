@@ -9,7 +9,7 @@ export default function App() {
     let element = useRoutes([
       {path: '/', element: <Home />},
       {path: '/about', element: <About />},
-      {path: '/product', element: <Product />},
+      {path: '/logement/:appartid', element: <Product />},
       {path: '/error', element: <Err />}
     ]);
   

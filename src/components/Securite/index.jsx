@@ -1,9 +1,11 @@
 import { Collapse } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import { useState } from "react";
+import textData from "../../mocks/textData";
 
 function Securite() {
 
+    const securite = textData.securite;
     const [open, setOpen] = useState(false);
 
     return (
@@ -20,8 +22,7 @@ function Securite() {
             </Button>
             <Collapse in={open}>
                 <div id="Respect-collapse-text" className="text-danger bg-light pt-2">
-                    Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite.
-                    N'hésitez pas à nous contacter si vous avez la moindre question.
+                    {securite}
                 </div>
             </Collapse>
         </div>

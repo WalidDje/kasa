@@ -1,9 +1,11 @@
 import { Collapse } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import { useState } from "react";
+import textData from "../../mocks/textData";
 
 function Fiabilite() {
 
+    const fiabilite = textData.fiabilite
     const [open, setOpen] = useState(false);
 
     return (
@@ -20,9 +22,7 @@ function Fiabilite() {
             </Button>
             <Collapse in={open}>
                 <div id="fiabilité-collapse-text" className="text-danger bg-light pt-2">
-                    Les annonces postées sur Kasa garantissent une fiabilité totale.
-                    Les photos sont conformes aux logements,
-                    et toutes les informations sont régulièrement vérifiées par nos équipes.
+                    {fiabilite}
                 </div>
             </Collapse>
         </div>
