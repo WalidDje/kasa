@@ -19,6 +19,9 @@ code {
   justify-content: center;
   text-align: center;
 }
+main {
+  height: 100vh;
+}
 .carrousel {
   justify-content: center;
 }
@@ -42,6 +45,7 @@ code {
   margin-right: 2rem;
 }
 .tag-index {
+  display: flex;
   margin-left: 2rem;
 }
 .tag {
@@ -63,6 +67,13 @@ code {
   justify-content: center;
   align-items: center;
 }
+.error-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 @media only screen and (max-width: 900px) {
   .about-banner img {
     width: 800px;
@@ -108,5 +119,8 @@ code {
   .tag {
     margin: 0;
     margin-bottom: 5px;
+  }
+  .img-error img {
+    width: 80%;
   }
 }
