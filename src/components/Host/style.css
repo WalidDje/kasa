@@ -1,0 +1,26 @@
+.host {
+    display: flex;
+    justify-content: flex-end;
+}
+.host-pic {
+    border-radius: 50%;
+    height: 128px;
+    width: 128px;
+}
+.host-firstname {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+    color: #FF6060;
+}
+.host-lastname {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+    color: #FF6060;
+}
+.host-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

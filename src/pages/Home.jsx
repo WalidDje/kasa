@@ -7,8 +7,8 @@ import axios from "axios";
 import Cards from '../components/Cards';
 import Header from '../components/Header';
 import HomeIMG from '../assets/IMG.png';
+import Footer from '../components/Footer';
 import './../index.css'
-// import Footer from '../components/Footer';
 
 export default function Home() {
   const slogan = textData.slogan;
@@ -20,7 +20,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <main>
       <Header />
         <HomeBanner image={HomeIMG} title={slogan} />
         <div className="cards-container ">
@@ -34,6 +34,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-    </div>
+      <Footer />
+    </main>
   );
 }
