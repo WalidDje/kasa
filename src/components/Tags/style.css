@@ -1,0 +1,19 @@
+.tag-text {
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    margin: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.tag {
+    background-color: #FF6060;
+    border: none;
+    color: white;
+    padding: 1px 10px;
+    text-align: center;
+    border-radius: 50px;
+    margin-left: 2rem;
+}

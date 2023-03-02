@@ -1,10 +1,11 @@
-import IMG_Foot from '../../assets/D_Footer.png';
+import logo from '../../assets/D_Footer.png';
+import './style.css'
 
 function Footer() {
     return (
-        <div className='container-fluid nav fixed-bottom'>
-            <img className='img-fluid w-100' src={IMG_Foot} alt="Footer" />
-        </div>
+        <footer className="foot-container">
+			<img src={logo} alt="logo de kasa" />
+		</footer>
     )
 }
 

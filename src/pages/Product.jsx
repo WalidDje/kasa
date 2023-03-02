@@ -1,11 +1,15 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import Rating from "../components/Rating";
+import Host from "../components/Host";
 import apparts from "../mocks/logements.json"
 import Header from "../components/Header";
-import BG_img from "../assets/Background.png"
 import Information from "../components/Information";
-import Description from "../components/Description";
-import Equipement from "../components/Equipement";
+import Carrousel from '../components/Carrousel';
+import Tags from "../components/Tags";
+import Collapse from '../components/Collapse';
+import Footer from '../components/Footer';
+import './../index.css'
 
 function Product() {
 
@@ -15,17 +19,33 @@ function Product() {
         product;
 
     return (
-        <div>
+        <main>
             <Header />
-            <div className="d-flex">
-                <img src={BG_img} alt="background" className="d-flex mx-auto" />
+            <div className="d-flex carrousel">
+                <Carrousel slides={pictures} />
             </div>
-            <Information title={title} />
-            <div className="d-flex justify-content-around">
-                <Description text={description} />
-                <Equipement text={equipments} />
+            <Information title={title} location={location} rating={rating} pictures={pictures} host={host} />
+            <div className='infos-bloc'>
+                <div className="tag-index">
+                    {product.tags.map((tag, index) => (
+                        <Tags key={index} getTag={tag} />
+                        ))}
+                </div>
+                <div className="rating-and-host">
+                    <Rating rating={rating} />
+                    <Host host={host} />
+                </div>
             </div>
-        </div>
+            <div className="blocs">
+                <div className='desc-bloc'>
+                    <Collapse title="Description" content={description} />
+                </div>
+                <div className='equip-bloc'>
+                    <Collapse title="Equipement" content={equipments} />
+                </div>
+            </div>
+            <Footer />
+        </main>
     )
 }
 

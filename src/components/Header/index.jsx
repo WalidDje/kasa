@@ -1,17 +1,18 @@
 import Logo from '../../assets/LOGO.png'
 import { Link } from 'react-router-dom';
+import './style.css'
 
 function Header() {
     return (
         <div>
             <nav className="navbar bg-light">
-                <div className="container-fluid d-flex mx-5">
-                    <Link to="/" className='d-flex justify-content-start'>
+                <div className="navig-bar">
+                    <Link to="/" className='logo'>
                         <img src={Logo} alt="Logo Kasa" />
                     </Link>
-                    <div className='d-flex justify-content-end'>
-                        <Link to="/" className=' text-danger px-4 text-decoration-none h4'> Accueil </Link>
-                        <Link to="/About" className=' text-danger px-4 text-decoration-none h4'> A propos </Link>
+                    <div className='btn-navig'>
+                        <Link to="/" className='btn-accueil'> Accueil </Link>
+                        <Link to="/About" className='btn-apropos'> A propos </Link>
                     </div>
                 </div>
             </nav>

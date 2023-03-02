@@ -1,33 +1,41 @@
 .homeBanner {
-    width: 100%;
+    width: 90%;
     height: 255px;
+    margin: auto;
     position: relative;
     margin-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
+    justify-content: center;
 }
 .homeBanner-img {
-    width: inherit;
-    height: inherit;
     object-fit: cover;
-    border-radius: inherit;
-}
-.homeBanner-overlay {
-    position: absolute;
-    top: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
-    height: 100%;
-    width: 100%;
     border-radius: inherit;
 }
 .homeBanner-text {
     position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
     justify-items: center;
     align-self: center;
     font-size: 50px;
     font-weight: 300;
-    padding: 20%;
     color: white;
     box-sizing: inherit;
 }
+.child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .homeBanner-text {
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+    }
+  }

@@ -1,0 +1,17 @@
+.about {
+    margin: 0 5%;
+  
+    &__dropdowns {
+      width: 100%;
+  
+      text-align: auto;
+      margin-left: auto;
+      margin-right: auto;
+      @include media-query(large) {
+        margin: 1%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  

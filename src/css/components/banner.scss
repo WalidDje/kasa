@@ -1,0 +1,53 @@
+.banner {
+    border-radius: 10px;
+    position: relative;
+    margin: 20px 0;
+    height: 111px;
+    @include media-query(medium) {
+      height: 167px;
+    }
+    @include media-query(large) {
+      height: 223px;
+    }
+  
+    &__img {
+      border-radius: inherit;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  
+    &__overlay {
+      background-color: $color-3;
+      position: absolute;
+      top: 0;
+      border-radius: 10px;
+      height: 100%;
+      width: 100%;
+      opacity: 0.3;
+    }
+  
+    &__text {
+      position: absolute;
+      top: 0;
+      font-size: 24px;
+      color: $white;
+      font-weight: 500;
+      margin: 0;
+      padding-left: 16px;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+  
+      @include media-query(medium) {
+        font-size: 36px;
+        justify-content: center;
+      }
+      @include media-query(large) {
+        font-size: 48px;
+      }
+    }
+  }
+  
