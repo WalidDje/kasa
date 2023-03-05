@@ -8,7 +8,7 @@
 .leftArrow {
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: -40rem;
     height: 120px;
     z-index: 10;
     cursor: pointer;
@@ -17,7 +17,7 @@
 .rightArrow {
     position: absolute;
     top: 50%;
-    right: 5%;
+    right: -40rem;
     height: 120px;
     z-index: 10;
     cursor: pointer;
@@ -34,6 +34,7 @@
     top: 0%;
     bottom: 0%;
     mix-blend-mode: normal;
+    border-radius: 6%;
 
 }
 .slider-number {

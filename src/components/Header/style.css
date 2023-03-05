@@ -6,6 +6,12 @@
     margin-left: 2rem;
     margin-right: 2rem;
 }
+.nav-bar {
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
 .btn-navig {
     display: flex;
     flex: end;
@@ -50,4 +56,8 @@ a:hover {
     .logo {
         margin-left: 10px;
     }
+    .nav-bar {
+        margin: 0;
+        margin-bottom: 2rem;
+      }
   }

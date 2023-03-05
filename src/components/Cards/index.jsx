@@ -4,10 +4,8 @@ function Cards({ cover, title }) {
 
     return (
         <div className="card-form">
-            <img variant="top" src= {cover} alt="couverture" />
-            <div className="card-body">
-                <h5 className="card-title"> {title} </h5>
-            </div>
+            <img className='card-image' src= {cover} alt="couverture" />
+            <p className="card-title"> {title} </p>
         </div>
     )
 }

@@ -1,0 +1,10 @@
+.information-bloc {
+    width: 90%;
+    margin: auto;
+}
+@media only screen and (max-width: 600px) {
+    .information-bloc {
+        width: 100%;
+        margin: 0;
+    }
+}

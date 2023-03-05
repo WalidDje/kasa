@@ -1,7 +1,7 @@
 .item {
     margin-bottom: 5px;
     padding: 10px 20px;
-    width: 80%;
+    width: 100%;
     margin: auto;
     margin-top: 2rem;
   }
@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
   }
@@ -25,6 +25,7 @@
     transition: all 0.5s cubic-bezier(0,1,0,1);
   }
   .content.show {
+    background-color: #F6F6F6;
     height: auto;
     font-size: large;
     font-weight: 400;
