@@ -26,7 +26,7 @@ function About() {
       <main>
         <Header />
         <div className="d-flex about-banner">
-            <img className="mx-auto" src={IMG_Banner} alt="Bannière" />
+            <img src={IMG_Banner} alt="Bannière" />
         </div>
         <div className="about-dropdowns">
           <Collapse title="Fiabilité" content={content("fiabilite")} />

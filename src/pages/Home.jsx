@@ -11,6 +11,7 @@ import Footer from '../components/Footer';
 import './../index.css'
 
 export default function Home() {
+
   const slogan = textData.slogan;
 
   const [data, setData] = useState([]);
@@ -24,7 +25,7 @@ export default function Home() {
       <Header />
         <HomeBanner image={HomeIMG} title={slogan} />
         <div className="cards-container ">
-          <div className="g-4 card-disposition">
+          <div className="card-disposition">
             {data.map((appart, id) => (
               <div className="card-logement" key={id}>
                 <Link className="link-card-logement" to={`/logement/${appart.id}`}>

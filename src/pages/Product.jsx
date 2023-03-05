@@ -9,6 +9,7 @@ import Carrousel from '../components/Carrousel';
 import Tags from "../components/Tags";
 import Collapse from '../components/Collapse';
 import Footer from '../components/Footer';
+import { Navigate } from 'react-router-dom';
 import './../index.css'
 
 function Product() {
@@ -16,7 +17,11 @@ function Product() {
     const { appartid } = useParams();
     const product = apparts.find((product) => product.id === appartid);
     const { title, location, rating, host, equipments, description, pictures } =
-        product;
+    product;
+    if (appartid === undefined) {
+        Navigate("/Error", { state: { message: "Can't get data" } }); 
+        //renvoi vers la page 404 en cas d'URL de logement invalide
+    };
 
     return (
         <main>

@@ -10,6 +10,8 @@ export default function App() {
       {path: '/', element: <Home />},
       {path: '/about', element: <About />},
       {path: '/logement/:appartid', element: <Product />},
+      {path: '/logement/Error', element: <Err />},
+      {path: '/Error', element: <Err />},
       {path: '/*', element: <Err />}
     ]);
   

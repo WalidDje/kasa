@@ -1,19 +1,22 @@
 .card-form {
-    height: 32rem;
-    width: 28rem;
-    margin: 2rem;
-    padding: 2rem;
+    width: 340px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(233, 233, 233);
-    border-radius: 20px;
+    margin: auto;
 }
-.card-body {
-    border-radius: 150%;
-    text-decoration: none;
-    display: flex;
+.card-image {
+    border-radius: 10%;
+    height: 340px;
+    object-fit: cover;
 }
 .card-title {
-    font-size: 1.5rem;
-    align-self: flex-end;
+    position: relative;
+    width: 50%;
+    bottom: 5rem;
+    left: 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    align-self: flex-start;
+    text-shadow: 1px 1px 2px black;
+    color: white;
 }

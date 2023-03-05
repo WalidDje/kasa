@@ -5,7 +5,7 @@ import './style.css'
 function Header() {
     return (
         <div>
-            <nav className="navbar bg-light">
+            <nav className="nav-bar">
                 <div className="navig-bar">
                     <Link to="/" className='logo'>
                         <img src={Logo} alt="Logo Kasa" />

@@ -3,7 +3,8 @@
     justify-content: center;
 }
 @media only screen and (max-width: 600px) {
-    .foot-container {
+    .foot-container, img{
         width: 100%;
+        margin: 0;
     }
 }

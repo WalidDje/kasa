@@ -13,11 +13,10 @@ code {
 }
 
 .card-disposition {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
 }
 main {
   height: 100vh;
@@ -27,18 +26,18 @@ main {
 }
 .blocs {
   display: flex;
-  justify-content: space-around;
-  text-align: center;
+  width: 90%;
+  margin: auto;
 }
 .desc-bloc {
-  display: flex;
-  width: 50%;
-  justify-content: center;
+  width: 100%;
+  margin-left: 2rem;
+  margin-right: 1rem;
 }
 .equip-bloc {
-  display: flex;
-  width: 50%;
-  justify-content: center;
+  width: 100%;
+  margin-left: 1rem;
+  margin-right: 2rem;
 }
 .rating-and-host {
   margin-left: 2rem;
@@ -56,6 +55,8 @@ main {
 .infos-bloc {
   display: flex;
   justify-content: space-between;
+  width: 80%;
+  margin: auto;
 }
 .footer {
   position: absolute;
@@ -73,6 +74,25 @@ main {
   justify-content: center;
   text-align: center;
 }
+.link-card-logement {
+  text-decoration: none;
+}
+.cards-container {
+  width: 90%;
+  margin: auto;
+}
+.about-dropdowns {
+  width: 80%;
+  margin: auto;
+}
+.about-banner, img {
+  width: 90%;
+  margin: auto;
+}
+.img-error {
+  width: 50%;
+  margin: auto;
+}
 
 @media only screen and (max-width: 900px) {
   .about-banner img {
@@ -85,12 +105,13 @@ main {
 }
 @media only screen and (max-width: 600px) {
   .about-banner img {
-    width: 400px;
-    height: 120px;
+    width: 380px;
   }
   .infos-bloc {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    margin: 0;
   }
   .blocs {
     display: flex;
@@ -100,9 +121,11 @@ main {
   }
   .desc-bloc {
     width: 100%;
+    margin: 0;
   }
   .equip-bloc {
     width: 100%;
+    margin: 0;
   }
   .rating-and-host {
     flex-direction: column;
@@ -121,6 +144,12 @@ main {
     margin-bottom: 5px;
   }
   .img-error img {
-    width: 80%;
+    width: 100%;
+  }
+  .card-disposition {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
   }
 }
